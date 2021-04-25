@@ -1,0 +1,23 @@
+print("Answer the questions True or False!")
+age = input("Are you a cigarette addict older than 75 years old? : ")
+if age == "False" :
+  age = False
+else :
+  age = True
+  
+chronic = input("Do you have a severe chronic disease? : ")
+if chronic == "False" :
+  chronic = False
+else :
+  chronic = True
+immune = input("Is your immune system too weak? : ")
+if immune == "False" :
+  immune = False
+else :
+  immune = True
+risk = age and chronic and immune
+
+if risk :
+  print("YOU ARE IN RISKY GROUP!!!")
+else :
+  print("You are not in risky group")
